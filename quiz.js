@@ -10,7 +10,7 @@ function checkAnswer() {
     const feedback = document.getElementById('feedback');
 
     // Step 4: Check if an answer is selected
-    if (userAnswer) {
+    if (userAnswer.value) {
         // Step 5: Compare the User’s Answer with the Correct Answer
         if (userAnswer === correctAnswer) {
             feedback.textContent = "Correct! Well done.";
